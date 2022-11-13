@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/4p22-final-project-angelina-volkova/static/css/main.073c9b0a.css",
+    "main.js": "/4p22-final-project-angelina-volkova/static/js/main.fa923f24.js",
+    "static/js/787.f06595eb.chunk.js": "/4p22-final-project-angelina-volkova/static/js/787.f06595eb.chunk.js",
+    "static/media/logo.svg": "/4p22-final-project-angelina-volkova/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/4p22-final-project-angelina-volkova/index.html",
+    "main.073c9b0a.css.map": "/4p22-final-project-angelina-volkova/static/css/main.073c9b0a.css.map",
+    "main.fa923f24.js.map": "/4p22-final-project-angelina-volkova/static/js/main.fa923f24.js.map",
+    "787.f06595eb.chunk.js.map": "/4p22-final-project-angelina-volkova/static/js/787.f06595eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.fa923f24.js"
+  ]
+}
