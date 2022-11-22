@@ -1,0 +1,10 @@
+.Footer {
+    padding-left: 20px;
+    background-image:url(grass.jpg);
+    background-size:25%; 
+}
+
+.Footer-contacts {
+    color: darkgreen;
+    font-size: 15px;
+}
