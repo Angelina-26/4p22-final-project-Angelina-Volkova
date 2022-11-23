@@ -5,7 +5,7 @@ function Header() {
 
 return (
     <header className="Header">
-        <h1 className="Header-name">Best shop</h1>
+        <h1 className="Header-name">NEW SHOPPING GALLERY</h1>
     <div className="Header-container">
         <a href=" " target="blank" className="Header-container__link">О нас</a>
         <a href=" " target="blank" className="Header-container__link">Оплата</a>

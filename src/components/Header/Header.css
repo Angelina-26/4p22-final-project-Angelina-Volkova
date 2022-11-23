@@ -1,14 +1,17 @@
   .Header {
-   margin-bottom: 30px;
+    margin-top: -30px;
+    margin-bottom: 20px;
+    height: 170px;
     background-image:url(header.jpg);
     background-size:100%;
     background-repeat:no-repeat;
   }
   
   .Header-name {
-    color: darkgreen;
+    text-align: center;
+    color: #7eb5ec;
     font-size: 50px;
-    padding-left: 600px;
+    
   }
   
   .Header-container {
@@ -20,17 +23,18 @@
   }
   
   .Header-container__link {
-    padding-left:10px;
-    padding-bottom: 5px;
-    color:#149830;
+    text-align:center;
+    padding-top: 6px;
+    text-decoration: none;
+    color:black;
+    box-shadow: 2px 3px 9px 1px;
     font-weight: 500;
     font-size: 20px;
-    margin-bottom:0.5;
-    border-style:solid;
     border-radius:15px;
-    background-color:#9bd7b1b3;
-    height: 40px;
-    width: 110px;
+    background-color:#7eb5ec;
+    height: 50px;
+    width: 130px;
+    
 
   }
   

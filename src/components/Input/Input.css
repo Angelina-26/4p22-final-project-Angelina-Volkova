@@ -4,9 +4,20 @@
 }
 .Input {
     padding-left: 20px;
+    margin-top: 50px;
+    
 }
 
 .Input-name {
-    color: darkgreen;
+    color: grey;
     font-size: 15px;
+}
+
+.Input-button {
+    width: 150px;
+    height: 55px;   
+}
+
+.Input-textField {
+    
 }
