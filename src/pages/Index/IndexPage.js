@@ -26,8 +26,7 @@ function IndexPage() {
                   img={item.image}
                   price={item.price} />
             })
-            }
-            <Link to={'contacts'}>Контакты</Link>  
+            }  
          </div>
          </>
          
