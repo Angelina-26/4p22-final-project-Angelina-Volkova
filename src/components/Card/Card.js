@@ -1,18 +1,20 @@
 import './Card.css';
 import Button from '../Button/Button';
+import { useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
-function Card(props) {
+function Card({img,title, description, price, id}) {
     return (
-        <div className="Card">
-            <img className="Card-img" alt="product" src= { props.img }/>
-             <div className="Card-container">
-                 <h2 className="Card-title common-header">{ props.title }</h2>
-                <p className="Card-description">{ props.description }</p>
-                <div className="Card-price"> { props.price }</div>
-                 <div className="Card-button"><Button text="В корзину" />
-                 </div>
+        <Link to={`products/${id}`} className="Card">
+            <img className="Card-img" alt="product" src= { img }/>
+            <div className="Card-container">
+                <h2 className="Card-title common-header">{ title }</h2>
+                <p className="Card-description">{ description }</p>
+                <div className="Card-price"> { price }</div>
+                <div className="Card-button"><Button text="Купить" />
+            </div>    
             </div>
-    </div>
+        </Link>
     )
 }
 

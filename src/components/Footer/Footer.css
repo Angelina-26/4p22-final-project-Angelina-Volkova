@@ -8,3 +8,11 @@
     color: darkgreen;
     font-size: 15px;
 }
+
+.Footer-link {
+    color: darkgreen;
+}
+
+.Footer-link:visited {
+    color:#aacced;
+}
