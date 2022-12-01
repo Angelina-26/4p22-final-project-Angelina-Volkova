@@ -1,0 +1,50 @@
+.Product-card {
+    margin: auto;
+    width: 450px;
+    align-items: center;
+    display: flex;
+    flex-direction: column; 
+}
+
+.Product-card__title {
+    margin-top: 20px;
+    font-size: 20px;
+    color: grey;
+}
+
+.Product-card__image {
+    object-fit: contain;
+    height: 350px;
+}
+
+.Product-card__price {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: grey;
+}
+
+.Product-card__price::after {
+    content: '€'
+}
+
+.Product-card__button {
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    color:black;
+    font-weight: 700;
+    font-size: 15px;
+    transition: .2s background-color;
+    cursor: pointer;
+}
+
+.Product-card__button:hover {
+    background:#aacced;
+}
+
+.Product-card__description {
+    font-size: 14px;
+  
+}
+

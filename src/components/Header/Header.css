@@ -2,9 +2,13 @@
     margin-top: -30px;
     margin-bottom: 20px;
     height: 170px;
+    box-shadow: 2px 3px 9px 1px; 
+    color: grey;
     background-image:url(header.jpg);
     background-size:100%;
     background-repeat:no-repeat;
+    position: sticky;
+    top: 0px;
   }
   
   .Header-name {
@@ -15,7 +19,6 @@
   }
   
   .Header-container {
-  
     display:flex;
     justify-content:space-around;
     align-items:center;
@@ -29,12 +32,32 @@
     color:black;
     box-shadow: 2px 3px 9px 1px;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 18px;
     border-radius:15px;
     background-color:#aacced;
-    height: 50px;
+    height: 45px;
     width: 130px;
-    
+  }
+
+  @media screen and (min-width:375px) and (max-width:768px) {
+
+  .Header-container__link {
+  
+    height: calc(50 / 768 * 100vw);
+    width: calc(130 / 768 * 100vw); 
+    font-size: calc(20 / 768 * 100vw);
+  }
+
+  .Header-name {
+    font-size: calc(50 / 768 * 100vw);
+  }
+
+  .Header {
+    margin-top: calc(-30 / 768 * 100vw);
+    margin-bottom: calc(20 / 768 * 100vw);
+    height: calc(170 / 768 * 100vw);
+  }
+
 
   }
   

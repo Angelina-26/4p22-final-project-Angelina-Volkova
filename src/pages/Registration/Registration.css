@@ -2,66 +2,17 @@
     box-sizing: border-box;    
 }
 
-.header {
-    display: flex;
-    justify-content:space-between;
-    width: 100%;
-    height: 80px;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    background: #FFFFFF;
-}
-.header__left {
-    display: flex;
-    column-gap: 35px;
-    padding-top: 10px;
-}
-
-.header__right {
-    display:flex;
-    column-gap: 35px;
-    padding-top: 10px;
-}
-
-.header__heading {
-    font-size:36px;
-    font-family: 'Inter';
-    font-style: bold;
-    color: #787878;
-    margin-top: 8px;
-}
-
-.header__logo {
-    width: 222px;
-    height: 50px;
-}
-
-.header__link {
-    font-size: 24px;
-    font-family: 'Inter';
-    font-style: bold;
-    color: #787878;
-    text-decoration: none;
-}
-.header__link--active {
-    font-size: 24px;
-    font-family: 'Inter';
-    font-style: bold;
-    text-decoration: none;
-    color: #1A226B;
-
-}
-
 .reg {
     margin: 0 auto;
     display:flex;
     flex-direction: column;
-    margin-top: 200px;
+    margin-top: 100px;
     margin-bottom: 50px;
     height:1000px;
     width: 600px;
     background: #FFFFFF;
-    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);
-   
+    box-shadow: 0px 0px 40px 10px rgba(0, 0, 0, 0.25);  
+    border-radius: 20px;
 }
 
 .reg__heading {
@@ -69,7 +20,7 @@
     text-align: center;
     font-family: 'Roboto';
     font-weight: 700;
-    font-size:50px;
+    font-size:40px;
     line-height: 50px;
     margin-top: 26px;  
 }
@@ -78,11 +29,13 @@
     display: flex;
     flex-direction: column;
     padding-left: 45px;
-    row-gap: 9px;  
+    row-gap: 9px; 
+ 
 }
 
-.reg__input {
+.reg__input, .reg__input2, .reg__input3 {
     box-sizing: border-box;
+    border-radius: 15px; 
     padding: 0px 15px;
     row-gap: 32px;
     background: #FFFFFF;
@@ -149,7 +102,7 @@
 }
 
 .reg__radio-input {
-  display:none;
+    display:none;
 }
 
 .reg__radio-label::before {
@@ -176,12 +129,13 @@
 }
 .reg__about-textarea {
     width: 510px;
-    height: 246px;
+    height: 200px;
     font-size: 28px;
     font-family: 'Roboto';
     font-weight: 700;
     color: #787878;
     padding-left:15px;
+    border-radius: 15px;
 }
 
 ::-webkit-input-placeholder {
@@ -191,8 +145,9 @@
 .reg__checkbox {
     padding-left: 45px;
 }
+
 .reg__checkbox-label {
-    font-size: 14px;
+    font-size: 18px;
     font-family: 'Roboto';
     font-weight: 400;
     color: #787878;
@@ -201,6 +156,7 @@
 .reg__checkbox > input{
     display: none;
 }
+
 .reg__checkbox-label::before {
     content:'';
     display: inline-block;
@@ -211,20 +167,112 @@
     margin-right: 10px; 
     border: solid #787878;
     background-clip:content-box;
+    border-radius: 15px;
 }
 
 .reg__checkbox-input:checked + label::before {
-background-color: #787878;  
+    background-color: #787878; 
+    border-radius: 15px; 
 }
 
 .reg__button {
-    margin-top: 62px;
-    margin-left: 210px;
-    height:52px;
-    width: 180px;
-    background-color:#1A226B;
-    color:#fff;
-    font-size: 24px;
+    align-self: center;
+    margin-top: 25px;
+    border-radius: 15px;
+    width: 140px;
+    height: 55px;
+    color:black;
     font-weight: 700;
-    font-family: 'Roboto';
+    font-size: 20px;
+    transition: .2s background-color;
+    cursor: pointer;
 }
+
+.reg__button:hover {
+    background:#aacced;;
+}
+
+.red {
+    border: 2px solid #EE2424;
+}
+
+.error {
+    display: none;
+    margin-top: -20px;
+    margin-right: 0;
+    position: absolute;
+}
+
+.show {
+    display: block;
+    color:#EE2424;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 320px;
+}
+.error2 {
+    display: none;
+}
+
+.show2 {
+    display: block;
+    color:#EE2424;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 260px; 
+    margin-top: -18px;
+}
+
+.error3 {
+    display: none;
+    position: absolute;
+    margin-top: -18px;
+}
+
+.show3 {
+    display: block;
+    color:#EE2424;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 350px; 
+}
+
+.error8 {
+    display:none;
+    position: absolute;
+    margin-top: -10px;
+    margin-right: -50px;
+}
+
+.show8 {
+    display: block;
+    color:#EE2424;
+    font-size: 16px;
+    font-weight: 700;
+    margin-left: 165px;  
+}
+
+.reg__inputs2 {
+    margin-left: 50px;  
+   
+    
+
+}
+.btn {
+    margin-left: 120px;
+    border-radius: 15px;
+    width: 120px;
+    height: 40px;
+    color:black;
+    font-weight: 700;
+    font-size: 15px;
+    transition: .2s background-color;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background:#aacced;
+}
+
+
+

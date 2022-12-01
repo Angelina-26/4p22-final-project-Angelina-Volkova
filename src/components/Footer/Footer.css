@@ -1,16 +1,16 @@
 .Footer {
     padding-left: 20px;
-    background-image:url(grass.jpg);
+    background-color: #aacced;;
     background-size:25%; 
 }
 
 .Footer-contacts {
-    color: darkgreen;
+    color: black;
     font-size: 15px;
 }
 
 .Footer-link {
-    color: darkgreen;
+    color: black;
 }
 
 .Footer-link:visited {

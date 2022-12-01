@@ -1,8 +1,6 @@
 import './IndexPage.css';
 import { useState, useEffect } from 'react';
 import Card from '../../components/Card/Card';
-import Header from '../../components/Header/Header';
-import { Link } from 'react-router-dom';
 
 function IndexPage() {
     const [ products, setProducts ] = useState([]);
@@ -28,8 +26,7 @@ function IndexPage() {
             })
             }  
          </div>
-         </>
-         
+         </>   
     )
 }
 export default IndexPage;

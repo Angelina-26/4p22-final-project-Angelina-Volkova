@@ -1,9 +1,7 @@
-.CommonButton {
-    outline: none;
+.Common-button {
     border-radius: 15px;
     width: 120px;
     height: 40px;
-    margin-left: 40px;
     color:black;
     font-weight: 700;
     font-size: 15px;
@@ -11,7 +9,7 @@
     cursor: pointer;
 }
 
-.CommonButton:hover {
+.Common-button:hover {
     background:#aacced;;
 }
 

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 function Button(props) {
     return (
-        <button className="CommonButton">{ props.text }</button>
+        <button className="Common-button">{ props.text }</button>
     )
 }
 

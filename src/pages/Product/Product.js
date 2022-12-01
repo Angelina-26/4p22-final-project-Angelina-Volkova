@@ -15,13 +15,16 @@ function ProductPage() {
 
         })();
       
-    }, [])
+    },[userId]);
 
     return (
-        <>
-            <h1>{ product.title }</h1>
-            <img src={ product.image }></img>
-        </>
+        <div className="Product-card">
+            <h2 className="Product-card__title">{ product.title }</h2>
+            <img className="Product-card__image" src={ product.image } alt="product"></img>
+            <p className="Product-card__description">{ product.description }</p>
+            <div className="Product-card__price"> { product.price }</div>
+            <button className="Product-card__button">{'Купить'}</button>
+        </div>
     )
 
 }
