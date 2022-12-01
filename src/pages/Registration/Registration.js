@@ -122,6 +122,7 @@ btn.addEventListener('click', (e) => {
             <label className="reg__checkbox-label" for="checkbox">Согласен на обработку персональных данных</label> 
         </div>      
             <button type="submit" className="reg__button">Отправить</button>
+
     </form>
 
     )
