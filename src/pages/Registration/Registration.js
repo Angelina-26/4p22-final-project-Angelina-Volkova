@@ -10,7 +10,6 @@ const btn = document.querySelector('.reg__button');
 const error = document.querySelector('.error');
 const error2 = document.querySelector('.error2');
 const input2 = document.querySelector('.reg__input2');
-const error8 = document.querySelector('.error8');
 const about = document.querySelector('.reg__about-textarea');
 const gender = document.querySelector('.reg__radio-input');
 const subscribe = document.querySelector('.reg__checkbox-input');
@@ -37,19 +36,16 @@ btn.addEventListener('click', (e) => {
      if (String(input2.value) === '') {
         input2.classList.add('red');
         error2.classList.add('show2');
-        error8.classList.remove('show8');
     
      } else if (input2.value.length < 8) {
         input2.classList.add('red');
-        error8.classList.add('show8');
         error2.classList.remove('show2');
 
     } else {
         input2.classList.remove('red');
         error2.classList.remove('show2');
-        error8.classList.remove('show8');
     }
-    if (!error2.classList.contains('show2') && !error.classList.contains('show') && !error8.classList.contains('show8')) {
+    if (!error2.classList.contains('show2') && !error.classList.contains('show')) {
         const result = {
             email: input.value,
             name: input2.value,
@@ -99,7 +95,7 @@ btn.addEventListener('click', (e) => {
             <p><input className="reg__input__file" type="file" name="f"/>
             <button className="btn" type="submit" value="Отправить">Attach</button></p>
 
-        <div class="reg__checkbox">
+        <div className="reg__checkbox">
             <input className="reg__checkbox-input" id="checkbox" type="checkbox" value="true"/>
             <label className="reg__checkbox-label"htmlFor="checkbox">I agree to the processing of personal data</label> 
         </div> 
