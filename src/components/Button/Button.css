@@ -7,9 +7,10 @@
     font-size: 15px;
     transition: .2s background-color;
     cursor: pointer;
+    margin-bottom: -30px;
 }
 
 .Common-button:hover {
-    background:#aacced;;
+    background:#aacced;
 }
 

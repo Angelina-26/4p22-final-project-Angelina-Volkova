@@ -10,8 +10,6 @@ const btn = document.querySelector('.reg__button');
 const error = document.querySelector('.error');
 const error2 = document.querySelector('.error2');
 const input2 = document.querySelector('.reg__input2');
-/*const input3 = document.querySelector('.reg__input3');*/
-/*const error3 = document.querySelector('.error3');*/
 const error8 = document.querySelector('.error8');
 const about = document.querySelector('.reg__about-textarea');
 const gender = document.querySelector('.reg__radio-input');
@@ -26,7 +24,6 @@ btn.addEventListener('click', (e) => {
         console.log(re.test(String(email).toLowerCase()));
         return re.test(String(email).toLowerCase());
     }
-
   
     if (validateEmail(input.value)) {
         input.classList.remove('red');
@@ -36,15 +33,6 @@ btn.addEventListener('click', (e) => {
         input.classList.add('red');
         error.classList.add('show');  
     }
-
-    /*if (String(input3.value) !== (input2.value)) {
-        input3.classList.add('red');
-        error3.classList.add('show3');
-
-    } else {
-        input3.classList.remove('red');
-        error3.classList.remove('show3');
-    }*/
    
      if (String(input2.value) === '') {
         input2.classList.add('red');
@@ -64,7 +52,7 @@ btn.addEventListener('click', (e) => {
     if (!error2.classList.contains('show2') && !error.classList.contains('show') && !error8.classList.contains('show8')) {
         const result = {
             email: input.value,
-            password: input2.value,
+            name: input2.value,
             about: about.value,
             gender: gender.value,
             subscribe: subscribe.value,
@@ -77,49 +65,47 @@ btn.addEventListener('click', (e) => {
 
     return ( 
     
-    <form className="reg" enctype="form-data" method="post">
-        <h1 className="reg__heading">Форма обратной связи</h1>
+    <form className="reg" method="post">
+        <h1 className="reg__heading">Feedback</h1>
         <div className="reg__inputs">
         <div>
-            <label className="reg__email" for="email">* Email</label> 
-            <label className="error" for="email">Email введен некорректно</label> 
+            <label className="reg__email" htmlFor="email">* Email</label> 
+            <label className="error" htmlFor="email">Email entered incorrectly</label> 
         </div> 
-            <input className="reg__input" id="email" name="email" type="email" placeholder="Введите email"/>
+            <input className="reg__input" id="email" name="email" type="email" placeholder="Enter your email"/>
         
         <div>
-            <label className="reg__password" for="password">* Имя</label>
-            <label className="error2" for="email">Поле обязательно для заполнения</label>
-            <label className="error8" for="email">Пароль должен содержать не менее 8 символов</label>
+            <label className="reg__password" htmlFor="password">* Name</label>
+            <label className="error2" htmlFor="email">Required</label>
         </div>     
-            <input className="reg__input2" id="password" name="password" type="text" placeholder="Введите ваше имя"/>           
+            <input className="reg__input2" id="password" name="password" type="text" placeholder="Enter your name"/>           
         </div>
-        <div class="reg__radio">
-            <h4 className="reg__radio-heading">Пол</h4>
+        <div className="reg__radio">
+            <h4 className="reg__radio-heading">Gender</h4>
             <input className="reg__radio-input" id="radio-1" type="radio" name="radio" value="male" checked/>
-            <label className="reg__radio-label" for="radio-1">Мужчина</label>
+            <label className="reg__radio-label"htmlFor="radio-1">Male</label>
         </div>
         <div className="reg__radio">
             <input className="reg__radio-input" id="radio-2" type="radio" name="radio" value="female" checked/>
-            <label className="reg__radio-label" for="radio-2">Женщина</label>
+            <label className="reg__radio-label" htmlFor="radio-2">Female</label>
         </div>
 
-        <div class="reg__about">
-            <label className="reg__radio-heading" for="textarea"></label>
-           <p><textarea className="reg__about-textarea" id="textarea" name="text area" placeholder="Введите ваше сообщение"></textarea></p>
+        <div className="reg__about">
+            <label className="reg__radio-heading" htmlFor="textarea"></label>
+           <p><textarea className="reg__about-textarea" id="textarea" name="text area" placeholder="Enter your comment"></textarea></p>
         </div>
 
         <div className="reg__inputs2">
             <p><input className="reg__input__file" type="file" name="f"/>
-            <button className="btn" type="submit" value="Отправить">Прикрепить</button></p></div>
+            <button className="btn" type="submit" value="Отправить">Attach</button></p>
 
         <div class="reg__checkbox">
             <input className="reg__checkbox-input" id="checkbox" type="checkbox" value="true"/>
-            <label className="reg__checkbox-label" for="checkbox">Согласен на обработку персональных данных</label> 
-        </div>      
-            <button type="submit" className="reg__button">Отправить</button>
-
+            <label className="reg__checkbox-label"htmlFor="checkbox">I agree to the processing of personal data</label> 
+        </div> 
+            <button className="reg__button" type="submit" >Send</button>
+            </div>
     </form>
-
     )
 }
 

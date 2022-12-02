@@ -23,7 +23,7 @@ function ProductPage() {
             <img className="Product-card__image" src={ product.image } alt="product"></img>
             <p className="Product-card__description">{ product.description }</p>
             <div className="Product-card__price"> { product.price }</div>
-            <button className="Product-card__button">{'Купить'}</button>
+            <button className="Product-card__button">{'Buy'}</button>
         </div>
     )
 

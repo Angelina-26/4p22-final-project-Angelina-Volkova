@@ -20,3 +20,11 @@ code {
 .Card-price::after {
   content: '€'
 }
+
+@font-face {
+  font-family: 'Roboto-Medium';
+  src: local ('Roboto-Medium'), url(./Fonts/Roboto-Medium.woff2) format('.woff2'); 
+  src: local ('Roboto-Medium'), url(./Fonts/Roboto-Medium.woff) format('.woff'); 
+
+}
+
