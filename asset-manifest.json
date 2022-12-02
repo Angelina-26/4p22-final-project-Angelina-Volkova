@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/4p22-final-project-angelina-volkova/static/css/main.7c7f82fe.css",
-    "main.js": "/4p22-final-project-angelina-volkova/static/js/main.3d305d53.js",
+    "main.js": "/4p22-final-project-angelina-volkova/static/js/main.3a89d6c3.js",
     "static/media/header.jpg": "/4p22-final-project-angelina-volkova/static/media/header.039194898620b385fefb.jpg",
     "static/media/Roboto-Medium.woff": "/4p22-final-project-angelina-volkova/static/media/Roboto-Medium.e624b10d53c919bd7496.woff",
     "static/media/Roboto-Medium.woff2": "/4p22-final-project-angelina-volkova/static/media/Roboto-Medium.57b8a81c7519e4d6b555.woff2",
     "index.html": "/4p22-final-project-angelina-volkova/index.html",
     "main.7c7f82fe.css.map": "/4p22-final-project-angelina-volkova/static/css/main.7c7f82fe.css.map",
-    "main.3d305d53.js.map": "/4p22-final-project-angelina-volkova/static/js/main.3d305d53.js.map"
+    "main.3a89d6c3.js.map": "/4p22-final-project-angelina-volkova/static/js/main.3a89d6c3.js.map"
   },
   "entrypoints": [
     "static/css/main.7c7f82fe.css",
-    "static/js/main.3d305d53.js"
+    "static/js/main.3a89d6c3.js"
   ]
 }
