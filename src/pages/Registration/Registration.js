@@ -36,10 +36,6 @@ btn.addEventListener('click', (e) => {
      if (String(input2.value) === '') {
         input2.classList.add('red');
         error2.classList.add('show2');
-    
-     } else if (input2.value.length < 8) {
-        input2.classList.add('red');
-        error2.classList.remove('show2');
 
     } else {
         input2.classList.remove('red');
@@ -71,10 +67,10 @@ btn.addEventListener('click', (e) => {
             <input className="reg__input" id="email" name="email" type="email" placeholder="Enter your email"/>
         
         <div>
-            <label className="reg__password" htmlFor="password">* Name</label>
+            <label className="reg__name" htmlFor="name">* Name</label>
             <label className="error2" htmlFor="email">Required</label>
         </div>     
-            <input className="reg__input2" id="password" name="password" type="text" placeholder="Enter your name"/>           
+            <input className="reg__input2" id="name" name="name" type="text" placeholder="Enter your name"/>           
         </div>
         <div className="reg__radio">
             <h4 className="reg__radio-heading">Gender</h4>
